@@ -11,7 +11,7 @@ const CreatedTodos = () => {
       <ul className="flex py-10 gap-4 flex-col w-[700px] justify-center m-auto">
         {todoList.map(
           (todo) =>
-            todo.status == "CREATED" && (
+            todo.status === "CREATED" && (
               <li
                 key={todo.id}
                 className="flex justify-between bg-cyan-200 rounded-xl px-4 py-2 gap-3 items-center"

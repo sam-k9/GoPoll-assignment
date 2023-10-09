@@ -28,7 +28,7 @@ const Form = () => {
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          className="text-gray-900 bg-cyan-50 ml-6 py-2 px-2 focus:outline-none rounded-md border-gray-400 border-l-2"
+          className="text-gray-900 bg-blue-100 ml-6 py-2 px-2 focus:outline-none rounded-md border-gray-400 border-l-2"
         />
       </label>
       <label className="text-lg font-medium text-gray-100">
@@ -43,7 +43,7 @@ const Form = () => {
           onChange={(e) => {
             if (e.target.value.split(" ").length < 4) setTags(e.target.value);
           }}
-          className="text-gray-900 bg-cyan-50 ml-6 py-2 px-2 focus:outline-none rounded-md border-gray-400 border-l-2 text"
+          className="text-gray-900 bg-blue-100 ml-6 py-2 px-2 focus:outline-none rounded-md border-gray-400 border-l-2 text"
         />
       </label>
       <button

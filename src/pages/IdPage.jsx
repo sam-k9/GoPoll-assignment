@@ -17,7 +17,17 @@ const IdPage = () => {
 
   console.log(todo);
   if (todo.length < 1) {
-    return <h1>Id Not Found</h1>;
+    return (
+      <div className="flex flex-col h-screen justify-center items-center bg-gray-900">
+        <h1 className="text-gray-100 text-3xl font-extrabold">Id Not Found</h1>;
+        <Link
+          to={"/"}
+          className="bg-gray-300 px-3 py-2 rounded-xl font-bold hover:text-gray-200 hover:bg-blue-500"
+        >
+          Go Home
+        </Link>
+      </div>
+    );
   }
 
   return (

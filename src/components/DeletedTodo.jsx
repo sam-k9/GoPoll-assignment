@@ -8,7 +8,7 @@ const DeletedTodo = () => {
       <ul className="flex py-10 gap-4 flex-col w-[700px] justify-center m-auto">
         {todoList.map((todo) => {
           if (
-            todo.status == "DELETED" &&
+            todo.status === "DELETED" &&
             (new Date().getTime() - new Date(todo.updatedAt).getTime()) /
               (1000 * 60 * 60) <
               24
