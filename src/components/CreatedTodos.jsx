@@ -14,7 +14,7 @@ const CreatedTodos = () => {
             todo.status === "CREATED" && (
               <li
                 key={todo.id}
-                className="flex justify-between bg-cyan-200 rounded-xl px-4 py-2 gap-3 items-center"
+                className="flex justify-between bg-cyan-200 rounded-xl px-4 py-2 gap-3 items-center hover:bg-green-300"
               >
                 <Link className="flex-1" to={`/todo/${todo.id}`}>
                   <h3 className="font-semibold">{todo.title}</h3>
@@ -22,13 +22,13 @@ const CreatedTodos = () => {
 
                 <section className="flex gap-6">
                   <button
-                    className="bg-cyan-500 px-2 py-1 rounded-lg text-gray-50"
+                    className="bg-cyan-500 hover:bg-cyan-700 px-2 py-1 rounded-lg text-gray-50"
                     onClick={() => dispatch(markCompleted({ id: todo.id }))}
                   >
                     Mark as completed
                   </button>
                   <button
-                    className="bg-cyan-500 px-2 py-1 rounded-lg text-gray-50"
+                    className="bg-cyan-500 hover:bg-cyan-700 px-2 py-1 rounded-lg text-gray-50"
                     onClick={() => dispatch(deleteTodo({ id: todo.id }))}
                   >
                     Delete

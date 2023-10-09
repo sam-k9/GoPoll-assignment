@@ -16,7 +16,7 @@ const DeletedTodo = () => {
             return (
               <li
                 key={todo.id}
-                className="flex justify-between bg-cyan-200 rounded-xl px-4 py-2 gap-3 items-center"
+                className="flex justify-between bg-cyan-200 rounded-xl px-4 py-2 gap-3 items-center hover:bg-green-300"
               >
                 <Link to={`/todo/${todo.id}`} className="flex-1">
                   <h3 className="font-semibold">{todo.title}</h3>
