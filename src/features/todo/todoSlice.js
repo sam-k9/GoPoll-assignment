@@ -11,9 +11,6 @@ const todoSlice = createSlice({
   reducers: {
     addTodo: (state, { payload: { title, tags } }) => {
       let tagsSTring = "";
-      if (tags.length > 3) {
-        tags = tags.slice(0, 3);
-      }
       tags.forEach((tag) => {
         tagsSTring += " #" + tag;
       });
