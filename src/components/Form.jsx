@@ -12,6 +12,8 @@ const Form = () => {
     e.preventDefault();
     const tagArray = tags.split(" ");
     dispatch(addTodo({ title, tags: tagArray }));
+    setTitle("");
+    setTags("");
   };
 
   return (
